@@ -1,0 +1,98 @@
+:root {
+  --gap-ofthemall: 3em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  height: 100svh;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100svh;
+  width: 100%;
+  background: url(omid-armin-g17w8RVeKuQ-unsplash123.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.sidebar_txt {
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.signup {
+  width: 100%;
+  min-height: 100svh;
+  display: grid;
+  align-content: center;
+  row-gap: 2em;
+}
+
+.signup_textblock {
+  margin-left: var(--gap-ofthemall);
+}
+
+.signup_formblock {
+  box-shadow: 0 6px 6px -4px gray;
+  width: 100%;
+}
+
+.signup_form {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(calc(360px - 1em), 100%), 1fr)
+  );
+  gap: 1em;
+  max-width: 800px;
+  padding-left: var(--gap-ofthemall);
+}
+
+.signup_loginblock {
+  margin-left: var(--gap-ofthemall);
+}
+
+.form-row .txt {
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 0.8em;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.form-row label {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 940px) {
+  .grid {
+    grid-template-columns: 40% 60%;
+  }
+}

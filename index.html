@@ -7,26 +7,51 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <main>
-      <div class="sidebar"></div>
+    <main class="grid">
+      <div class="sidebar">
+        <p class="sidebar_txt">Photo stolen from Unsplash</p>
+      </div>
       <section class="signup">
-        <p class="signup_text">You know you want to!</p>
-        <form action="" class="signup_form">
-          <label for="firstName">FIRST NAME</label>
-          <input type="text" name="Name" id="firstName" />
-          <label for="lastName">LAST NAME</label
-          ><input type="text" id="lastName" name="LastName" />
-          <label for="email">EMAIL</label
-          ><input type="email" name="Email" id="email" />
-          <label for="number">PHONE NUMBER</label
-          ><input type="number" name="PhoneNumber" id="number" />
-          <label for="pass">PASSWORD</label
-          ><input type="password" name="Password" id="pass" />
-          <label for="conpass">CONFIRM PASSWORD</label>
-          <input type="password" id="conpass" />
-        </form>
-        <button class="signup_btn" type="submit">Create Account</button>
-        <p class="login">Already have an account?</p>
+        <div class="signup_textblock">
+          <p class="signup_text">You know you want to!</p>
+        </div>
+        <div class="signup_formblock">
+          <form action="" class="signup_form">
+            <div class="form-row">
+              <label for="firstName">FIRST NAME</label>
+              <input class="txt" type="text" name="Name" id="firstName" />
+            </div>
+            <div class="form-row">
+              <label for="lastName">LAST NAME</label
+              ><input class="txt" type="text" id="lastName" name="LastName" />
+            </div>
+            <div class="form-row">
+              <label for="email">EMAIL</label
+              ><input class="txt" type="email" name="Email" id="email" />
+            </div>
+            <div class="form-row">
+              <label for="number">PHONE NUMBER</label
+              ><input
+                class="txt"
+                type="number"
+                name="PhoneNumber"
+                id="number"
+              />
+            </div>
+            <div class="form-row">
+              <label for="pass">PASSWORD</label
+              ><input class="txt" type="password" name="Password" id="pass" />
+            </div>
+            <div class="form-row">
+              <label for="conpass">CONFIRM PASSWORD</label>
+              <input class="txt" type="password" id="conpass" />
+            </div>
+          </form>
+        </div>
+        <div class="signup_loginblock">
+          <button class="signup_btn" type="submit">Create Account</button>
+          <p class="login">Already have an account?</p>
+        </div>
       </section>
     </main>
   </body>
